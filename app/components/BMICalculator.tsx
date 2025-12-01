@@ -32,7 +32,7 @@ export default function BMICalculator() {
     setLoading(true);
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://138.197.52.161:5000";
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://shavon-lentando-noninformatively.ngrok-free.dev:5000";
       const res = await fetch(`${apiUrl}/api/bmi`, {
         method: "POST",
         headers: {
